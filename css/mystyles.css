@@ -1,0 +1,49 @@
+body{
+  background-color: #F54A4A;
+  color: #FFF;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.shape-logo{
+  max-width: 80%;
+  margin-bottom: 32px;
+}
+
+.center-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.bottom-box{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.white-button{
+  padding: 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: #F54A4A;
+  background-color: #FFF;
+  -webkit-transition: color .2s, background-color .2s, border .2s;
+  transition: color .2s, background-color .2s, border .2s;
+}
+
+.white-button:hover{
+  color: #FFF;
+  background-color: #F54A4A;
+  border: 2px solid #FFF;
+}
