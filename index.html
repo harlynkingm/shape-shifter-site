@@ -30,21 +30,53 @@
 </head>
 <body>
   <div class="container">
-    <div class="center-box">
+    <div class="main-content">
       <img src="images/logo.png" class="shape-logo">
-      <h5 style="padding-bottom:32px">Coming soon to iOS and Android</h5>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBVn_UO9C-HyWTTZhh0OarvyMGCelz2ZjxvkSDuCkSSxbwLg/viewform" class="white-button" target="_blank">Sign Up for the Beta Test</a>
+      <h5 style="padding-bottom:32px">Coming soon to iOS and Android!</h5>
+      <a href="javascript:;" class="white-button" id="sign-up">Sign Up for the Beta Test</a>
+      <div id="form-section" class="row hidden">
+        <form id="docs-data">
+          <div class="two columns">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" value="" class="form-input" id="firstname" required>
+          </div>
+          <div class="two columns">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" value="" class="form-input" id="lastname" required>
+          </div>
+          <div class="four columns">
+            <label for="email">Apple ID or Google Email</label>
+            <input type="email" name="email" value="" class="form-input" id="email" required>
+          </div>
+          <div class="two columns">
+            <label for="device-type">Device</label>
+            <select style="color:#000" id="device" required>
+              <option selected="selected">Select...</option>
+              <option value="iOS">iOS</option>
+              <option value="Android">Android</option>
+            </select>
+          </div>
+          <label for="submit">&nbsp;</label>
+          <input type="submit" class="white-button form-send two columns" value="SEND">
+        </form>
+      </div>
+      <div id="success" class="row hidden">
+        <h4>Great! We will email you when your Beta access has been approved.</h4>
+      </div>
+      <div id="error" class="row hidden">
+        <h4>Sorry, we couldn't process your request at this time.<br>Refresh the page and try again.</h4>
+      </div>
     </div>
-    <div class="bottom-box">
-      <p style="font-size:12px; margin-bottom: 3px;">© Tuguise Apps 2016</p>
-    </div>
+  </div>
+  <div class="bottom-box">
+    <p style="font-size:12px; margin-bottom: 3px;">© Tuguise Apps 2016</p>
   </div>
   
 </body>
   
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="js/scripts.js"></script>
   <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/scripts.js"></script>
   
 </html>
