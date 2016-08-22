@@ -1,5 +1,5 @@
 body{
-  background-color: #F54A4A;
+  background-color: #F93131;
   color: #FFF;
 }
 
@@ -38,16 +38,16 @@ body{
   padding: 20px;
   border-radius: 7px;
   text-decoration: none;
-  color: #F54A4A;
+  color: #F93131;
   background-color: #FFF;
   -webkit-transition: color .2s, background-color .2s, border .2s;
   transition: color .2s, background-color .2s, border .2s;
-  border: 3px solid #F54A4A;
+  border: 3px solid #F93131;
 }
 
 .white-button:hover{
   color: #FFF;
-  background-color: #F54A4A;
+  background-color: #F93131;
   border: 3px solid #FFF;
 }
 
